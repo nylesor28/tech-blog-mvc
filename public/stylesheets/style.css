@@ -109,11 +109,11 @@ main {
   color: #3486eb;
 }
 
-.delete-blogbtn {
+.delete-blog-btn {
   background-color: #d41414;
 }
 
-.delete-blogbtn:hover {
+.delete-blog-btn:hover {
   background-color: #ff643d;
 }
 
