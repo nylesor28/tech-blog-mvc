@@ -6,7 +6,7 @@
   <form class="edit-blogform">
     <div>
       <input name="blog-title" type="text" value="{{blog.title}}" />
-      <span>({{blog.blog_text}})</span>
+      <div><textarea>({{blog.blog_text}})</textarea></div>
     </div>
     <div>
       Created by you on {{format_date blog.created_at}}

@@ -2,7 +2,7 @@ async function newFormHandler(event) {
   event.preventDefault();
 
   const title = document.querySelector('input[name="blog-title"]').value;
-  const blog_text = document.querySelector('input[name="blog-text"]').value;
+  const blog_text = document.querySelector('textarea[name="blog-text"]').value;
 
   const response = await fetch(`/api/blogs`, {
     method: 'POST',
@@ -22,4 +22,4 @@ async function newFormHandler(event) {
   }
 }
 
-document.querySelector('.new-blogform').addEventListener('submit', newFormHandler);
+document.querySelector('.new-blog-form').addEventListener('submit', newFormHandler);
