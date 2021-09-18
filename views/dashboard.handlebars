@@ -10,21 +10,23 @@
       <label for="blog-text">Text</label>
       <textarea id="blog-text" name="blog-text"> </textarea>
     </div>
-    <button type="submit" class="btn">Create</button>
+    <div>
+      <button type="submit" class="btn">Create</button>
+      </div>
   </form>
 </section>
 
 {{#if blogs.length}}
 <section>
   <h2>Your Blogs</h2>
-  <ol>
+  <div>
     {{#each blogs as |blog|}}
-    <li>
+    
       {{> blog-info blog}}
       <a href="/dashboard/edit/{{blog.id}}" class="edit-link">Edit blog</a>
-    </li>
+   
     {{/each}}
-  </ol>
+  </div>
 </section>
 {{/if}}
 

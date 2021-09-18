@@ -28,10 +28,10 @@ h1
   line-height: 1.25;
 }
 
-/* main {
+main {
   margin: 20px auto;
   width: 94%;
-} */
+}
 
 header {
   padding: 3% 4%;
@@ -108,7 +108,7 @@ nav a:hover {
 }
 
 .comment{
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
 }
 
 h2{
@@ -116,7 +116,24 @@ h2{
 }
 
 form > div {
-  margin: 2%;
+  margin: 1%;
+  width: 100%;
+  /* text-align: center; */
+}
+form > div >textarea {
+  width: 90%;
+  text-align: center;
+}
+form  div button {
+  margin-left: 5%;
+  width: 90%;
+  text-align: center;
+}
+
+.comment-form > div >textarea {
+  margin-left: 5%;
+  width: 90%;
+  text-align: center;
 }
 
 form label,
@@ -124,13 +141,63 @@ form input {
   display: block;
 }
 
-.login-form input {
+.new-blog-form  {
+ margin-left: 5%;
+ 
+
+}
+
+
+.login-form input,
+.new-blog-form input {
   width: 90%;
   padding: 1%;
-
+ 
   font-size: 1.2rem;
   border: 2px solid var(--light-dark);
   border-radius: var(--border-radius);
+}
+
+.btn {
+  margin-left: 0%;
+  width: 90%;
+  text-align: center;
+}
+
+.edit-link{
+  font-size: 1.3rem;
+  text-decoration:none;
+  padding: 6px 5px;
+  width: 95%;
+  display: block;
+  margin: 0 3%;
+  border-radius: var(--border-radius);
+  color: var(--primary);
+  border: none;
+  outline: none;
+  background-color: var(--light-dark);
+  box-shadow: 3px 3px var(--dark);
+  transform: translate(-1px, -1px);
+  text-align: center;
+}
+
+
+textarea:focus, input:focus {
+  outline: none;
+  border: 1px solid #3486eb;
+}
+
+textarea {
+   width: 90%;
+  min-height: 100px;
+  padding: 1%;
+
+
+
+  border: 2px solid var(--light-dark);
+  border-radius: var(--border-radius); 
+  
+
 }
 
 button {
@@ -154,3 +221,4 @@ button:hover {
   background-color: var(--secondary);
   color: var(--tertiary);
 }
+
