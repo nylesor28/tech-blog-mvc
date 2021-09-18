@@ -61,6 +61,12 @@ nav a {
   color: var(--primary);
   font-weight: bold;
   transition: color .1s;
+  padding-right: 1%;
+
+
+}
+nav{
+  margin-bottom: 1%;
 }
 
 nav a:hover {
@@ -122,7 +128,7 @@ form > div {
 }
 form > div >textarea {
   width: 90%;
-  text-align: center;
+  /* text-align: center; */
 }
 form  div button {
   margin-left: 5%;
@@ -133,7 +139,7 @@ form  div button {
 .comment-form > div >textarea {
   margin-left: 5%;
   width: 90%;
-  text-align: center;
+  /* text-align: center; */
 }
 
 form label,
@@ -225,3 +231,29 @@ button:hover {
   color: var(--tertiary);
 }
 
+footer {
+  border-top: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  padding: 1%;
+  font-size: 110%;
+}
+
+.btn-no-style {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 100%;
+  font-weight: bold;
+  transition: color .1s;
+  display: inline;
+  width: 10%;
+  margin-bottom: 1%;
+}
+
+.btn-no-style:hover {
+  background: none;
+  color: var(--tertiary)
+}

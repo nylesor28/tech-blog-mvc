@@ -1,8 +1,13 @@
 async function newFormHandler(event) {
   event.preventDefault();
 
-  const title = document.querySelector('input[name="blog-title"]').value;
-  const blog_text = document.querySelector('textarea[name="blog-text"]').value;
+  const title = document.querySelector('input[name="blog-title"]').value.trim();
+  const blog_text = document.querySelector('textarea[name="blog-text"]').value.trim();
+
+  if(!title || !blog_text) {
+    alert("Please provie a title and text")
+    return
+  }
 
   const response = await fetch(`/api/blogs`, {
     method: 'POST',
