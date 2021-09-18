@@ -11,9 +11,7 @@
 <body>
   <div class="wrapper">
     <header>
-      <h1>
-        <a href="/">Just Tech News</a>
-      </h1>
+
       <nav>
         {{#if loggedIn}}
         <a href="/dashboard">dashboard</a>
@@ -23,6 +21,9 @@
         <a href="/register">register</a>
         {{/if}}
       </nav>
+       <h1>
+        <a href="/">The Techie Blog</a>
+      </h1>
     </header>
     <main>
       {{{ body }}}
