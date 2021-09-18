@@ -19,7 +19,7 @@ Blog.init(
       allowNull: false
     },
     blog_text: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(5000),
       allowNull: false,
 
     },
