@@ -155,6 +155,7 @@ form input {
 
 
 .login-form input,
+.register-form input,
 .new-blog-form input,
 .edit-blog-form input {
   width: 90%;
