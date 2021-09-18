@@ -115,3 +115,42 @@ h2{
   text-align: center;
 }
 
+form > div {
+  margin: 2%;
+}
+
+form label,
+form input {
+  display: block;
+}
+
+.login-form input {
+  width: 90%;
+  padding: 1%;
+
+  font-size: 1.2rem;
+  border: 2px solid var(--light-dark);
+  border-radius: var(--border-radius);
+}
+
+button {
+  font-size: 1.3rem;
+  text-decoration:none;
+  padding: 6px 5px;
+  width: 90%;
+  display: block;
+  margin: 5px 0;
+  border-radius: var(--border-radius);
+  color: var(--primary);
+  border: none;
+  outline: none;
+  background-color: var(--light-dark);
+  box-shadow: 3px 3px var(--dark);
+  transform: translate(-1px, -1px);
+  
+}
+
+button:hover {
+  background-color: var(--secondary);
+  color: var(--tertiary);
+}
