@@ -91,9 +91,11 @@ router.post('/', withAuth, (req, res) => {
 
 
 router.put('/:id', withAuth, (req, res) => {
+
   Blog.update(
     {
-      title: req.body.title
+      title: req.body.title,
+      blog_text: req.body.text
     },
     {
       where: {
@@ -115,7 +117,7 @@ router.put('/:id', withAuth, (req, res) => {
 });
 
 router.delete('/:id', withAuth, (req, res) => {
-  console.log('id', req.params.id);
+
   Blog.destroy({
     where: {
       id: req.params.id
