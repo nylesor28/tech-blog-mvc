@@ -149,7 +149,8 @@ form input {
 
 
 .login-form input,
-.new-blog-form input {
+.new-blog-form input,
+.edit-blog-form input {
   width: 90%;
   padding: 1%;
  
@@ -181,6 +182,11 @@ form input {
   text-align: center;
 }
 
+.edit-link:hover {
+  background-color: var(--secondary);
+  color: var(--tertiary);
+}
+
 
 textarea:focus, input:focus {
   outline: none;
@@ -191,9 +197,6 @@ textarea {
    width: 90%;
   min-height: 100px;
   padding: 1%;
-
-
-
   border: 2px solid var(--light-dark);
   border-radius: var(--border-radius); 
   

@@ -4,29 +4,21 @@
     Edit Blog
   </h2>
   <form class="edit-blog-form">
-    <div>
+      <label for="blog-title">Title:</label>
       <input name="blog-title" type="text" value="{{blog.title}}" />
-      <div><textarea>({{blog.blog_text}})</textarea></div>
-    </div>
+    
+      <label for="blog-text">Text</label>
+      <textarea id="blog-text" name="blog-text"> {{blog.blog_text}}</textarea>
+    
     <div>
       Created by you on {{format_date blog.created_at}}
       |
       <a href="/blog/{{blog.id}}">{{blog.comments.length}} {{format_plural "comment" blog.comments.length}}</a>
     </div>
-    <button type="submit">Update Blog</button>
-    <button type="button" class="delete-blog-btn">Delete blog</button>
+    <button type="submit" class="btn">Update Blog</button>
+    <button type="button" class="btn">Delete blog</button>
   </form>
 </article>
-
-<form class="comment-form">
-  <div>
-    <textarea name="comment-body"></textarea>
-  </div>
-
-  <div>
-    <button type="submit">add comment</button>
-  </div>
-</form>
 
 {{> comments blog.comments}}
 
