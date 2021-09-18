@@ -18,7 +18,7 @@ The Tech Blog allows developers to publish their blog posts and comment on other
     a. cd to the project root directory 
     b. mysql -u <username> -p
     c. Enter Password
-    d. Run source b/schema.sql
+    d. Run source db/schema.sql
 2. Run npm run start
 3. To initially load the database, npm run seed
 ````
